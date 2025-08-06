@@ -7,26 +7,26 @@ body {
     display: flex;
     align-items: center; 
     justify-content: center;
-    font-family: monospace, sans-serif;
+    font-family: 'Karla', sans-serif;
 
 }
 
 /* Main container styling */
 .container {
-    width: 750px;
+    width: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     grid-template-areas: 
         "white-box white-box"
         "price-box features-box";
-    border-radius: 18px;
-    background-color: #fefefe;
+    border-radius: 10px;
+    background-color: #e5eff5;
     box-shadow:
         0 12px 30px rgba(0, 0, 0, 0.18),
         0 8px 15px rgba(0, 0, 0, 0.08);
 
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
 }
 
 /* Hover effect for container */
@@ -39,7 +39,7 @@ body {
 
 /* Headings */
 h1 {
-    color: #155e63;
+    color: hsl(179, 62%, 43%);
     margin-top: 0;
     font-weight: 700;
     letter-spacing: 1.1px;
@@ -67,7 +67,7 @@ h1 + p {
 /* Price box section */
 .price-box {
     grid-area: price-box;
-    background-color: #155e63;
+    background-color: hsl(179, 62%, 43%);
     color: #f0f7f7;
     padding: 25px;
   
@@ -96,7 +96,7 @@ h1 + p {
 button {
     margin: 25px auto 0;
     width: 85%;
-    background-color: #ff6f61;
+    background-color: hsl(71, 73%, 54%);
     color: white;
     padding: 14px 0;
     border-radius: 30px;
@@ -110,15 +110,15 @@ button {
 }
 
 button:hover {
-    background-color: #ff513f;
-    box-shadow: 0 8px 20px rgba(255, 81, 63, 0.6);
+    background-color: #c8e34f;
+    box-shadow: 0 8px 20px #c8e34f7b;
     transform: translateY(-3px);
 }
 
 /* Features box section */
 .features-box {
     grid-area: features-box;
-    background-color: #2e7d7e;
+    background-color: #4abebd;
     padding: 25px;
     color: #e3f6f5;
     font-size: 1.05rem;
